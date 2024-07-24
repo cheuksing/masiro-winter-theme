@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "character-count": "echo Built css character count: $(wc -m < ./dist/main.css)",
-    "build": "sass --style=compressed ./src/main.css ./dist/main.css && pnpm character-count"
+    "build": "sass --style=compressed ./src/main.scss ./dist/main.css && pnpm character-count"
   },
   "devDependencies": {
     "sass": "^1.77.8",
