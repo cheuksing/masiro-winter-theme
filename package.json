@@ -1,0 +1,18 @@
+{
+  "name": "winter-theme",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "character-count": "echo Built css character count: $(wc -m < ./dist/main.css)",
+    "build": "sass --style=compressed ./src/main.css ./dist/main.css && pnpm character-count"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8",
+    "stylelint": "^16.7.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "vite": "^5.3.4",
+    "vite-plugin-monkey": "^4.0.6"
+  }
+}
